@@ -1,0 +1,36 @@
+@import url(./header.css); 
+@import url(./profile2.css); 
+@import url(./experiences.css);
+@import url(./projects.css);
+@import url(./variables.css);
+
+.body{
+    background-color: var(--primary-theme-color);
+    color: var(--text-color);
+    font-family: 'Roboto', 'sanf serif';
+    margin: 0;
+}
+main{
+    width: 100%;
+    min-height: 200vh;
+}
+.wave-separator{
+    width: 100%;
+}
+.wave-separator--r-180deg{
+    transform: rotate(180deg);
+}
+.wave-separator__wave-container{
+    display: flex;
+    margin: 0;
+}
+.waver-separator__wave{
+    width: 100%;
+    margin: 0;
+}
+
+@media(min-width: 854px){
+    .root{
+        --padding-container:0 0.75em;
+    }
+}

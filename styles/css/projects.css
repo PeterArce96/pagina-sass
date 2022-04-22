@@ -1,0 +1,98 @@
+.projects{
+    padding: 0 2rem 2rem;
+}
+.projects__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: var(--max-width-container);
+    margin: auto;
+    padding: var(--padding-container);
+}
+.projects__title{
+    font-size: 2rem;
+    text-shadow: 0 0 0.25rem var(--primary-highlight);
+    margin: 0;
+}
+.projects__projects-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.projects__projects-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--secondary-theme-color);
+    box-shadow: 0 0 0 0.125rem var(--primary-shadow-color),
+                0 0 0 0.25rem var(--primary-shadow-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.projects__projects-item:hover{
+    box-shadow: 0 0 0 0.25rem var(--primary-highlight),
+                0 0 0.5rem 0 var(--secondary-highlight),
+                0 0 0.75rem 0 var(--secondary-highlight);
+    transform: scale(1.05);
+    transition: var(--all-transitions);
+      
+}
+.projects__item-image-container{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+.projects__item-image{
+    width: 100%;
+}
+.projects__item-data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+.projects__item-data-title{
+    text-shadow: 0 0 0.125rem var(--primary-highlight);
+    margin: 0;
+}
+.projects__item-data-core-technology{
+    font-weight: 500;
+    margin: 0;
+}
+.projects__item-data-technologies{
+    text-shadow: 0 0 0.125rem var(--primary-highlight);
+    margin: 0;
+}
+.projects__item-data-about{
+    margin: 0;
+}
+.projects__item-button-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+}
+.projects__item-button{
+    font-weight: 700;
+    background-color: var(--button-color);
+    border: 0.0625 solid var(--button-color);
+    border-radius: var(--border-radius);
+    padding: 0.5em 1em;
+    color: var(--button-text-color);
+    text-decoration: none;
+    transition: var(--all-transitions);
+}
+.project__item-button--bg-gold{
+    background-color: var(--secondary-highlight);
+    border: 0.0625rem solid var(--secondary-highlight);
+}
+.projects__item-button:hover{
+    background-color: var(--button-color-active);
+}
+@media(min-width:854px){
+    .projects__projects-list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
