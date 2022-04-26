@@ -1,0 +1,86 @@
+@import 'mixins';
+:root{
+    scroll-behavior: smooth;
+    --primary-theme-color: #20232a;
+    --secondary-theme-color: #282c34;
+    --text-color: #fff;
+    --primary-shadow-color: #8888;
+    --secondary-shadow-color: #21242c80;
+    --shadow-color: #8888;
+    --button-color: #61dafb;
+    --button-color-active: #fff;
+    --button-text-color: #000;
+    --primary-highlight: #61dafb;
+    --secondary-highlight: #ffd700;
+    --invalid-color: #dc143c;
+    --padding-section: 4rem 0;
+    --padding-container: 0 2em;
+    --max-width-container: 1024px;
+    --border-radius: 0.5rem;
+    --all-transitions: all 0.25s;
+}
+.contact{
+    padding: var(--padding-section);
+    background-color: var(--secondary-theme-color);
+
+    &__container{
+        @include d-flex-fd-ai-jc-g(column, center, center, 2rem);
+        @include container;
+    }
+    &__title{
+        @include title;
+    }
+    &__form{
+        display: flex;
+    }
+    &__form-inputs{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    
+        @include box-shadow;
+       
+    }
+    &__form-inputs:hover{
+        box-shadow:
+        0 0 0 0.25rem var(--primary-highlight),
+        0 0 0.5rem 0 var(--secondary-highlight),
+        0 0 0.75rem 0 var(--secondary-highlight);
+    }
+    &__form-input{
+        background-color: transparent;
+        color: var(--text-color);
+        border: none;
+        padding: 0.75rem;
+        width: 200px;
+    }
+    &__form-input:invalid{
+        text-shadow:
+        0 0 0.25rem var(--invalid-color),
+        0 0 0.5rem var(--invalid-color);
+    }
+    &__form-input:valid{
+        text-shadow:
+        0 0 0.25rem var(--primary-highlight),
+        0 0 0.5rem var(--primary-highlight);
+    }
+    &__form-input::placeholder{
+        color: var(--text-color);
+        font-weight: 600;
+    }
+    &__form-button{
+        padding: 0.25rem 1rem;
+        font-weight: 700;
+        background-color: var(--button-color);
+        border: 0.0625 solid var(--button-color);
+    }
+}
+
+
+
+
+
+
+
+
+
+

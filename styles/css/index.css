@@ -3,6 +3,8 @@
 @import url(./experiences.css);
 @import url(./projects.css);
 @import url(./variables.css);
+@import url(./skills.css);
+@import url(./contact.css);
 
 .body{
     background-color: var(--primary-theme-color);

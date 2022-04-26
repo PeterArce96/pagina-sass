@@ -1,0 +1,64 @@
+:root {
+  scroll-behavior: smooth;
+  --primary-theme-color: #20232a;
+  --secondary-theme-color: #282c34;
+  --text-color: #fff;
+  --primary-shadow-color: #8888;
+  --secondary-shadow-color: #21242c80;
+  --shadow-color: #8888;
+  --button-color: #61dafb;
+  --button-color-active: #fff;
+  --button-text-color: #000;
+  --primary-highlight: #61dafb;
+  --secondary-highlight: #ffd700;
+  --padding-section: 4rem 0;
+  --padding-container: 0 2em;
+  --max-width-container: 1024px;
+  --border-radius: 0.5rem;
+  --all-transitions: all 0.25s;
+}
+
+/* SCSS */
+.skills {
+  padding: var(--padding-section);
+}
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1024px;
+  margin: auto;
+  padding: var(--padding-container);
+}
+.skills__title {
+  font-size: 2rem;
+  text-shadow: 0 0 0.25rem var(--primary-highlight);
+  margin: 0;
+}
+.skills__skills-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skills__skills-item {
+  background-color: var(--secondary-theme-color);
+  font-weight: 700;
+  padding: 0.5em 1em;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 0.25rem var(--primary-shadow-color), 0 0 0 0.125rem var(--primary-shadow-color);
+  transition: var(--all-transitions);
+}
+.skills__skills-item:hover {
+  box-shadow: 0 0 0 0.25rem var(--primary-highlight), 0 0 0.5rem 0 var(--secondary-highlight), 0 0 0.75rem 0 var(--secondary-highlight);
+  transform: scale(1.125);
+}
+
+/*# sourceMappingURL=skills.css.map */

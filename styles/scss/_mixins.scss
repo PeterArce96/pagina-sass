@@ -5,6 +5,32 @@
     justify-content: $justify-content;
     gap: $gap;
 }
+@mixin container{
+    max-width: 1024px;
+    margin: auto;
+    padding: var(--padding-container);
+}
+
+@mixin title{
+    font-size: 2rem;
+    text-shadow: 0 0 0.25rem var(--primary-highlight);
+    margin: 0;
+}
+@mixin  box-shadow($border-radius: var(--border-radius), $spread-radius: 0.125rem){
+    border-radius: $border-radius;
+    box-shadow: 
+    0 0 0 0.125rem var(--primary-shadow-color),
+    0 0 0 0.25rem var(--primary-shadow-color);
+    &:hover{
+        box-shadow:
+        0 0 0 0.25rem var(--primary-highlight),
+        0 0 0.5rem 0 var(--secondary-highlight),
+        0 0 0.75rem 0 var(--secondary-highlight);
+    }
+    overflow: hidden;
+    transition: var(--all-transitions);
+}
+
 @mixin button($padding: 0.25em 1em, $font-weight: 700, $border-radius: 0.5rem){
     background-color: var(--button-color);
     color: var(--button-text-color);
