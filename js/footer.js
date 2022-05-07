@@ -1,6 +1,5 @@
 
 import { contacts } from "../utils/contact.js";
-console.log(contacts);
 
 const footer = () => {
     //queryselector para seleccionar la clase
