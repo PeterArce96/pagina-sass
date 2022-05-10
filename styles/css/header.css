@@ -142,9 +142,11 @@
     font-weight: bold;
     transition: var(--all-transitions);
 }
-.header-nav_menu-link:hover{
+.header-nav_menu-link:hover,
+.header-nav__menu-link--active{
     color: var(--primary-highlight);
 }
+
 .header-nav_menu-link::after{
     content: '';
     position: absolute;

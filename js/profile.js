@@ -5,7 +5,6 @@ const profile = () => {
     const documentScroll = () => {
         profileInfo.style.marginTop = `-${scrollY}px`;
         profileFigure.style.marginTop = `-${scrollY}px`;
-        console.log(scrollY);
     };
 
     document.addEventListener('scroll', documentScroll);
