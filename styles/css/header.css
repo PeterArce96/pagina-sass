@@ -9,7 +9,7 @@
 .header--scroll {
     background-color: var(--primary-theme-color);
     box-shadow: 0 0.125rem 0.125rem 0 var(--primary-shadow-color);
-  }
+}
 .header-nav{
     padding: 0.5em 0;
     transition: var(--all-transitions);
